@@ -1,0 +1,15 @@
+// ==UserScript==
+// @name         Kometa HACK
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       kometa#4115
+// @match        //starve.io
+// @webRequest   [{"selector":"*js/client.min.js*","action":"cancel"}]
+// @match        https://starve.io/
+// @grant        none
+// ==/UserScript==
+
+let myScript = document.createElement("script");
+myScript.setAttribute("src", "https://kometastarve.github.io/kometaprosctipt/12.txt");
+document.body.appendChild(myScript);
